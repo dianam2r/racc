@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel='stylesheet' type='text/css' href='resources/css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:100,200,300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendors/css/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="vendors/js/jquery.flexslider.js"></script>
+    <meta charset="utf-8">
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider();
+      });
+      $(document).ready(function() {
+        $('ul li:has(ul)').hover(
+          function(e)
+          {
+             $(this).find('ul').css({display: "block"});
+          },
+          function(e)
+          {
+             $(this).find('ul').css({display: "none"});
+          }
+       );
+      });
+    </script>
+    <title>RACC</title>
+  </head>
+  <body>
+
+      <header>
+        <nav class="row-header">
+          <div class="start-line"><span></span></div>
+          <div class="row-header-logo">
+            <img src="resources/img/logo_1.png" alt="Logo RACC" class="logo">
+          </div>
+          <div class="row-header-nav">
+            <i class="ion-search" id="search"></i>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <ul class="first-nav">
+              <li><a href="#">My RACC</a></li>
+              <li><a href="#">Miller Center for the Arts</a></li>
+              <li><a href="#">Directory</a></li>
+              <li><a href="#">Give</a></li>
+              <li><a href="#">Search <i class="ion-search"></i></a></li>
+            </ul>
+
+            <div class="menu">
+              <ul class="second-nav">
+                <li><a href="#">About RACC</a></li>
+                <!--<div class="submenu">
+                  <ul class="children">
+                    <li><a href="#">Accreditations</a></li>
+                    <li><a href="#">Board of Trustees</a></li>
+                    <li><a href="#">Bussiness Oportunities</a></li>
+                    <li><a href="#">Campus Map and Directories</a></li>
+                    <li><a href="#">Faculty and Staff Directory</a></li>
+                    <li><a href="#">Foundation for RACC</a></li>
+                    <li><a href="#">Human Resources</a></li>
+                    <li><a href="#">Memberships</a></li>
+                    <li><a href="#">Research Guidelines</a></li>
+                    <li><a href="#">Safety and Security</a></li>
+                  </ul>
+                </div>-->
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Student Life</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Apply</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </nav>
+        <div class="flexslider-container">
+          <div class="flexslider">
+            <ul class="slides">
+              <li class="slide1">
+
+                <div class="gradiente"><img src="resources/img/slide.png" alt=""></div>
+              </li>
+              <li class="slide2">
+                <img src="resources/img/Fall17RegistrationHero.png" alt="">
+              </li>
+              <li class="slide3">
+                <img src="resources/img/sinkingspring.png" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide-text">
+          <div class="previous">
+            <img src="resources/img/prev.png" alt="Previous">
+          </div>
+          <div class="message-slider">
+            <h1>Enroll for fall<br>classes now!</h1>
+            <p>Need help with your tuition fees or books? Apply for<br>a scholarship today from the Foundation for RACC</p>
+          </div>
+          <div class="next">
+            <img src="resources/img/next.png" alt="Next">
+          </div>
+        </div>
+
+      </header>
+
+      <section class="enroll-now-mobile">
+        <a href="#">Enroll Now</a>
+      </section>
+
+      <section class="side-block">
+            <div class="left-side">
+              <ul class="center-content">
+                <li class="first"><h2><a href="#">I want to <i class="ion-chevron-down"></i></a></h2></li>
+                <li class="second"><h2><a href="#">Apply now <i class="ion-chevron-down"></i></a></h2></li>
+                <li class="third"><h2><a href="#">How to pay for college <i class="ion-chevron-down"></i></a></h2></li>
+                <li class="fourth"><h2><a href="#">Student life <i class="ion-chevron-down"></i></a></h2></li>
+              </ul>
+            </div>
+            <div class="right-side">
+              <div class="up">
+                <!--<img src="resources/img/comunity_hangout.png" alt="Comunity Hangout">-->
+              </div>
+              <div class="down">
+                <div class="down-left-side">
+                  <h2>Apply <br>online as</h2>
+                  <div class="columns-align">
+                    <div class="left-col">
+                      <p>First-time College Student</p>
+                      <p>Transfer Student</p>
+                      <p>Returnig Student</p>
+                      <p>Nursing Candidate</p>
+                    </div>
+                    <div class="right-col">
+                      <p>Early Applicant</p>
+                      <p>International Student</p>
+                      <p>Student with a Disability</p>
+                      <p>Guest Student</p>
+                    </div>
+                  </div>
+                </div>
+              <div class="down-right-side">
+                <h2>Apply <br>online as</h2>
+                <p>If you want answers from a current RACC student, Raven Ambassadors can help. The ambassadors will answer any questions you have about life at the College.</p>
+              </div>
+              </div>
+            </div>
+      </section>
+
+    <section class="featured-news">
+      <div class="heading-row">
+        <h2>Featured News</h2>
+        <h3>More</h3>
+      </div>
+      <div class="featured-news-content">
+        <div class="spotlight">
+          <!--<img src="resources/img/girl-student-cropped.png" alt="Student RACC">-->
+        </div>
+        <div class="student-spotlight">
+          <h2>Student Spotlight</h2>
+          <h1>Iesha Pierce</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+        </div>
+        <div class="find-your-voice">
+          <h2>Finding Your Voice</h2>
+        </div>
+        <div class="graduate-survey">
+          <h2>RACC Graduate Survey <br><span class="year">2014-2015</span></h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="upcoming-events">
+      <div class="heading-row">
+        <h2>Upcoming Events</h2>
+        <h3>More</h3>
+      </div>
+      <div class="upcoming-events-content">
+        <div class="calendar-1">
+          <ul class="calendar-date">
+            <li class="month">SEP</li>
+            <li class="day">27</li>
+          </ul>
+          <p>Fall Semester Begins <br>First Day of Fall Clases!</p>
+        </div>
+        <div class="calendar-2">
+          <ul class="calendar-date">
+            <li class="month">OCT</li>
+            <li class="day">29</li>
+          </ul>
+          <p>Fall Semester Begins <br>First Day of Fall Clases!</p>
+        </div>
+        <div class="calendar-3">
+          <ul class="calendar-date">
+            <li class="month">OCT</li>
+            <li class="day">27</li>
+          </ul>
+          <p>Fall Semester Begins <br>First Day of Fall Clases!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-connected">
+      <div class="get-connected-content">
+        <div class="first-col">
+          <div class="connected">
+            <h1>Get Connected</h1>
+            <div class="social">
+              <img src="resources/img/facebook-white.png" alt="Facebook">
+              <img src="resources/img/twitter-white.png" alt="Twitter">
+              <img src="resources/img/instagram-white.png" alt="Instagram">
+              <img src="resources/img/youtube-white.png" alt="YouTube">
+            </div>
+          </div>
+          <div class="stairs">
+            <div class="social-instagram">
+              <p><img src="resources/img/instagram-connected.png" alt="Instagram Social Media"> <span>&#64;amwejj_me</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="second-col">
+          <div class="back-to-school">
+            <!--<img src="resources/img/img6.png" alt="Back to school">-->
+            <div class="social-instagram">
+              <p><img src="resources/img/instagram-connected.png" alt="Instagram Social Media"> <span>&#64;amwejj_me</span></p>
+            </div>
+          </div>
+          <div class="advice">
+            <div class="message">
+              <p>Need Advice? Send me a tweet I'll be sure to answer it in the next edition of the Front Street Journal! <span>@RACC_edu #RACC #Advice</span></p>
+            </div>
+            <div class="social-twitter">
+              <p><img src="resources/img/twitter-hover.png" alt="Twitter Social Media"> <span><strong>&#64;RACC_edu</strong></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="third-col">
+          <div class="advice">
+            <div class="message">
+              <p>Need Advice? Send me a tweet I'll be sure to answer it in the next edition of the Front Street Journal! <span>@RACC_edu #RACC #Advice</span></p>
+            </div>
+            <div class="social-twitter">
+              <p><img src="resources/img/twitter-hover.png" alt="Twitter Social Media"> <span><strong>&#64;RACC_edu</strong></span></p>
+            </div>
+          </div>
+          <div class="racc-entrance">
+            <!--<img src="resources/img/img2.png" alt="RACC Entrance">-->
+            <div class="social-instagram">
+              <p><img src="resources/img/instagram-connected.png" alt="Instagram Social Media"> <span>&#64;amwejj_me</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="fourth-col">
+          <div class="racc-product">
+            <!--<img src="resources/img/img0.png" alt="RACC">-->
+            <div class="social-instagram">
+              <p><img src="resources/img/instagram-connected.png" alt="Instagram Social Media"> <span>&#64;amwejj_me</span></p>
+            </div>
+          </div>
+          <div class="advice">
+            <div class="message">
+              <p>Need Advice? Send me a tweet I'll be sure to answer it in the next edition of the Front Street Journal! <span>@RACC_edu #RACC #Advice</span></p>
+            </div>
+            <div class="social-twitter">
+              <p><img src="resources/img/twitter-hover.png" alt="Twitter Social Media"> <span><strong>&#64;RACC_edu</strong></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="need-more-info">
+      <div class="info-content">
+        <div class="info-header">
+          <h2>Need More Info</h2>
+        </div>
+        <div class="info-form">
+          <div class="contact-name">
+            <input type="text" id="potential-name" value="" placeholder="Name" size="28">
+          </div>
+          <div class="contact-phone">
+            <input type="text" id="potential-phone" value="" placeholder="Contact Phone" size="28">
+          </div>
+          <div class="contact-email">
+            <input type="text" id="potential-email" value="" placeholder="Email" size="44">
+          </div>
+          <div class="contact-send">
+            <a href="#">Sign Up</a>
+          </div>
+          <div class="contact-help">
+            <p>or call <span class="info-phone">1.800.555.1212</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-racc-college">
+      <!--<img src="resources/img/racc-college.png" alt=""> : Esto se coloca de fondo en la seccion-->
+      <div class="about-racc-content">
+        <div class="racc-info">
+          <h2>About RACC</h2>
+          <p>Reading Area Community College (RACC) is an accredited, comprehensive, open-enrollment education institution that provides the following: Associate degree, Certificate and Diploma Programs; career-focused training; transitional coursework; skills training for business and industry; personal enrichment programs and public service activities. Sponsored by the Berks County Commissioners the College provides affordable access to meet identified community educational needs.</p>
+        </div>
+        <div class="racc-video">
+          <div class="top-section">
+            <!--<img src="resources/img/img05.png" alt="Video About RACC">-->
+            <img src="resources/img/play-button.png" alt="Play Video About RACC">
+          </div>
+          <div class="bottom-section">
+            <h2>Why Reading Area Community College</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt tmollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem..aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsors">
+      <div class="miller-center">
+        <img src="resources/img/miller-center.png" alt="Miller Center Logo">
+      </div>
+      <div class="schmidt-training">
+        <img src="resources/img/shmidt-training.png" alt="Shmidt Training Logo"><br>
+        <p>Schmidt Training and <br>Tecnology Center</p>
+      </div>
+      <div class="give-to-racc">
+        <img src="resources/img/give-to-racc.png" alt="Give To Racc Logo"><br>
+        <p><span>GIVE</span> to <span>RACC</span><br>Foundation</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-menu-mobile">
+          <ul>
+            <li><a href="#">Apply</a></li>
+            <li><a href="#">Visit RACC</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </div>
+        <div class="sitemap">
+          <div class="hiperlinks">
+            <div class="popular-links">
+              <h3>Popular Links</h3>
+              <ul>
+                <li><a href="#">Berks County Social Services</a></li>
+                <li><a href="#">Business Oportunities</a></li>
+                <li><a href="#">Campus Map and Directions</a></li>
+                <li><a href="#">Human Resources</a></li>
+                <li><a href="#">Website Index</a></li>
+              </ul>
+            </div>
+            <div class="contact-information">
+              <h3>Contact Information</h3>
+              <ul>
+                <li><a href="#">Faculty/Staff Directory</a></li>
+                <li><a href="#">Webmaster</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">IT Support</a></li>
+              </ul>
+            </div>
+            <div class="policies">
+              <h3>Policies</h3>
+              <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Non-Disctrimination/EOE Statement</a></li>
+                <li><a href="#">Right to Know Act</a></li>
+                <li><a href="#">Title IX</a></li>
+              </ul>
+            </div>
+            <div class="login-center">
+              <h3>Login Center</h3>
+              <ul>
+                <li><a href="#">myRACC Portal</a></li>
+                <li><a href="#">E2 Campus</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="social-media">
+            <ul>
+              <li><img src="resources/img/social-6.png" alt="RACC Facebook"></li>
+              <li><img src="resources/img/social-5.png" alt="RACC Twitter"></li>
+              <li><img src="resources/img/social-4.png" alt="RACC YouTube"></li>
+              <li><img src="resources/img/social-2.png" alt="RACC in"></li>
+              <li><img src="resources/img/social-3.png" alt="RACC Snapchat"></li>
+              <li><img src="resources/img/social-1.png" alt="RACC Instagram"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="racc-white">
+            <img src="resources/img/logo-white.png" alt="Logo RACC White">
+          </div>
+          <div class="disclaimer">
+            <p>Copyright © 2016 Reading Area Community College <br>10 South Second Street, Reading, PA 19603 · 610-372-4721</p>
+            <p>Accredited by the Middle States Commission on Higher Education <br>3624 Market Street, Philadelphia, PA 19104 · 215-662-5606</p>
+          </div>
+          <div class="disclaimer-mobile">
+            <p>READING AREA COMUNITY COLLEGE<br>10 S 2nd St. Reading PA 19603 610-372-4721</p>
+            <p>Copyright &copy; RACC</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
