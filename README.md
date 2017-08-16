@@ -1,2 +1,2 @@
-# racc2
+# racc
 racc initiation project
