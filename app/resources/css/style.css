@@ -12,9 +12,9 @@ html {
   width: 1600px;
   font-weight: 300;
   font-size: 15px; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 375px) {
     html {
-      width: 400px; } }
+      width: 375px; } }
 
 h1,
 h2,
@@ -61,6 +61,10 @@ header {
       list-style: none;
     }
   }*/ }
+  @media only screen and (max-width: 375px) {
+    header .flexslider .slides img {
+      width: 375px;
+      height: 700px; } }
   header .slides {
     margin-top: -1px;
     background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)); }
@@ -72,7 +76,7 @@ header {
       content: ".";
       visibility: hidden;
       clear: both; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 375px) {
     header {
       height: 476px;
       width: auto;
@@ -94,13 +98,13 @@ header {
     display: inline-flex; }
     header .row-header .start-line {
       display: none; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 375px) {
         header .row-header .start-line {
           display: block;
           position: absolute;
           border: 0;
           height: 7px;
-          width: 400px;
+          width: 375px;
           background-color: #F23522; }
           header .row-header .start-line span {
             content: ".";
@@ -117,10 +121,10 @@ header {
       -moz-align-items: center;
       align-items: center;
       padding-left: 55px; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 375px) {
         header .row-header .row-header-logo {
-          padding-left: 81px;
-          padding-top: 3px; } }
+          padding-left: 75px;
+          padding-top: 4px; } }
       header .row-header .row-header-logo img {
         -webkit-align-self: auto;
         -moz-align-self: auto;
@@ -128,36 +132,41 @@ header {
         align-self: auto;
         width: 170px;
         height: auto; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           header .row-header .row-header-logo img {
-            width: 100px; } }
+            width: 95px; } }
     header .row-header .row-header-nav {
       font-family: Raleway, sans-serif;
       text-decoration: none;
       padding-left: 212px; }
+      @media only screen and (max-width: 375px) {
+        header .row-header .row-header-nav {
+          padding-left: 100px; } }
       header .row-header .row-header-nav #search {
-        font-size: 38px;
+        font-size: 37px;
         display: none; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           header .row-header .row-header-nav #search {
             display: block;
             position: absolute;
             color: #000;
-            padding-left: 107px;
-            padding-top: 17px; } }
+            padding-top: 16px; } }
       header .row-header .row-header-nav label {
         margin: 0 40px 0 0;
         padding: 0px 166px;
-        font-size: 41px;
+        font-size: 37px;
         line-height: 72px;
         width: 26px;
         display: none; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           header .row-header .row-header-nav label {
-            display: block; } }
+            display: block;
+            margin: 5px -6px 0 0;
+            padding: 0px 56px;
+            line-height: 62px; } }
       header .row-header .row-header-nav #toggle {
         display: none; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           header .row-header .row-header-nav #toggle #toggle:not(:checked) ~ .second-nav {
             display: none; } }
       header .row-header .row-header-nav .first-nav {
@@ -180,7 +189,7 @@ header {
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           header .row-header .row-header-nav .first-nav {
             display: none; } }
         header .row-header .row-header-nav .first-nav li {
@@ -232,7 +241,7 @@ header {
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           header .row-header .row-header-nav .second-nav {
             display: none; } }
         header .row-header .row-header-nav .second-nav li {
@@ -284,24 +293,24 @@ header {
     -moz-flex-flow: row;
     -ms-flex-flow: row;
     flex-flow: row; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 375px) {
       header .slide-text {
-        top: 35%;
+        top: 21.6%;
         left: 0%; } }
     header .slide-text .previous {
       padding-top: 84px;
       margin: 0px; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 375px) {
         header .slide-text .previous {
           padding-top: 38px;
           padding-left: 11px; } }
     header .slide-text .message-slider {
       padding-left: 106px;
       width: 560px; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 375px) {
         header .slide-text .message-slider {
-          padding-left: 36px;
-          padding-top: 98px;
+          padding-left: 29px;
+          padding-top: 131px;
           position: absolute; } }
       header .slide-text .message-slider h1 {
         font-size: 44px;
@@ -311,29 +320,29 @@ header {
         word-spacing: 1px;
         line-height: 1.1;
         padding-bottom: 28px; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           header .slide-text .message-slider h1 {
-            font-size: 38px;
+            font-size: 33px;
             position: absolute;
             padding-left: 0px;
             padding-right: 0px; } }
       header .slide-text .message-slider p {
         line-height: 1.5;
         margin-left: -3px; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           header .slide-text .message-slider p {
             display: none; } }
     header .slide-text .next {
       padding-top: 84px;
       padding-left: 890px; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 375px) {
         header .slide-text .next {
           padding-top: 38px;
-          padding-left: 269px; } }
+          padding-left: 246px; } }
 
 .enroll-now-mobile {
   background-color: #F23522;
-  height: 89px;
+  height: 84px;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -359,24 +368,24 @@ header {
     text-decoration: none;
     color: #000;
     font-family: Open Sans, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 10px 60px;
+    padding: 9px 51px;
     margin-top: 23px;
-    margin-left: 9px;
     -webkit-align-self: auto;
     -moz-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 375px) {
     .enroll-now-mobile {
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      margin-top: -30px; } }
 
 /*-------------------------------------------*/
 /* SIDE BLOCK SECTION */
@@ -389,9 +398,9 @@ header {
   display: inline-flex;
   position: absolute;
   z-index: 2;
-  margin-top: -30.3%;
-  padding-left: 33.2%; }
-  @media only screen and (max-width: 400px) {
+  margin-top: -30.7%;
+  padding-left: 33.6%; }
+  @media only screen and (max-width: 375px) {
     .side-block {
       display: -webkit-box;
       display: -webkit-flex;
@@ -412,20 +421,19 @@ header {
       font-size: 35px;
       font-weight: 200;
       text-decoration: none; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 375px) {
         .side-block .left-side h2 a, .side-block .right-side h2 a {
-          font-size: 25px; } }
+          font-size: 24px; } }
       .side-block .left-side h2 a i, .side-block .right-side h2 a i {
         display: none; }
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 375px) {
           .side-block .left-side h2 a i, .side-block .right-side h2 a i {
             display: inline-block;
             position: absolute; } }
   .side-block .left-side {
     width: 30.98305%; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 375px) {
       .side-block .left-side {
-        visibility: none;
         width: 100%; } }
     .side-block .left-side .center-content {
       display: -webkit-box;
@@ -437,7 +445,7 @@ header {
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 375px) {
         .side-block .left-side .center-content {
           -webkit-box-direction: normal;
           -webkit-box-orient: vertical;
@@ -449,61 +457,67 @@ header {
         height: 194px;
         width: 363.54px;
         list-style: none; }
-        @media only screen and (max-width: 400px) {
+        .side-block .left-side .center-content .first:hover, .side-block .left-side .center-content .second:hover, .side-block .left-side .center-content .third:hover, .side-block .left-side .center-content .fourth:hover {
+          background-color: #F23522; }
+        @media only screen and (max-width: 375px) {
           .side-block .left-side .center-content .first, .side-block .left-side .center-content .second, .side-block .left-side .center-content .third, .side-block .left-side .center-content .fourth {
             width: 100%;
-            height: 90px; } }
+            height: 84.3px; }
+            .side-block .left-side .center-content .first:hover:first-child, .side-block .left-side .center-content .second:hover:first-child, .side-block .left-side .center-content .third:hover:first-child, .side-block .left-side .center-content .fourth:hover:first-child {
+              border-top: 1px solid #000; }
+              .side-block .left-side .center-content .first:hover:first-child h2, .side-block .left-side .center-content .second:hover:first-child h2, .side-block .left-side .center-content .third:hover:first-child h2, .side-block .left-side .center-content .fourth:hover:first-child h2 {
+                padding-top: 29px; } }
       .side-block .left-side .center-content .first {
         background-color: #87888e; }
         .side-block .left-side .center-content .first h2 {
           padding-top: 75px;
           padding-left: 95px; }
-          @media only screen and (max-width: 400px) {
+          @media only screen and (max-width: 375px) {
             .side-block .left-side .center-content .first h2 {
-              padding-top: 30px;
-              padding-left: 132px; } }
-          @media only screen and (max-width: 400px) {
+              padding-top: 28px;
+              padding-left: 123px; } }
+          @media only screen and (max-width: 375px) {
             .side-block .left-side .center-content .first h2 i {
-              padding-left: 100px; } }
+              padding-left: 91px; } }
       .side-block .left-side .center-content .second {
         background-color: #999ba1; }
         .side-block .left-side .center-content .second h2 {
           padding-top: 75px;
           padding-left: 82px; }
-          @media only screen and (max-width: 400px) {
+          @media only screen and (max-width: 375px) {
             .side-block .left-side .center-content .second h2 {
-              padding-top: 30px;
-              padding-left: 120px; } }
-          @media only screen and (max-width: 400px) {
+              padding-top: 28px;
+              padding-left: 111px; } }
+          @media only screen and (max-width: 375px) {
             .side-block .left-side .center-content .second h2 i {
-              padding-left: 92px; } }
+              padding-left: 84px; } }
       .side-block .left-side .center-content .third {
         background-color: #bbbbbf; }
         .side-block .left-side .center-content .third h2 {
           padding-top: 57px;
           padding-left: 65px;
           padding-right: 10px; }
-          @media only screen and (max-width: 400px) {
+          @media only screen and (max-width: 375px) {
             .side-block .left-side .center-content .third h2 {
-              padding-top: 15px;
-              padding-left: 88px;
+              padding-top: 14px;
+              padding-left: 82px;
               padding-right: 427px; } }
-          @media only screen and (max-width: 400px) {
+          @media only screen and (max-width: 375px) {
             .side-block .left-side .center-content .third h2 i {
-              padding-left: 156px;
+              padding-left: 143px;
               margin-top: -15px; } }
       .side-block .left-side .center-content .fourth {
         background-color: #cfcfd2; }
         .side-block .left-side .center-content .fourth h2 {
           padding-top: 77px;
           padding-left: 63px; }
-          @media only screen and (max-width: 400px) {
+          @media only screen and (max-width: 375px) {
             .side-block .left-side .center-content .fourth h2 {
-              padding-top: 30px;
-              padding-left: 105px; } }
-        @media only screen and (max-width: 400px) {
+              padding-top: 28px;
+              padding-left: 97px; } }
+        @media only screen and (max-width: 375px) {
           .side-block .left-side .center-content .fourth i {
-            padding-left: 79px; } }
+            padding-left: 71px; } }
   .side-block .right-side {
     width: 62.64407%;
     -webkit-box-direction: normal;
@@ -512,6 +526,9 @@ header {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+    @media only screen and (max-width: 375px) {
+      .side-block .right-side {
+        visibility: hidden; } }
     .side-block .right-side .up {
       height: 388px;
       width: 811px;
@@ -581,6 +598,9 @@ header {
 /* This is common between Features News and Upcoming Events */
 .featured-news, .upcoming-events {
   padding-left: 39px; }
+  @media only screen and (max-width: 375px) {
+    .featured-news, .upcoming-events {
+      padding-left: 24px; } }
   .featured-news .heading-row, .upcoming-events .heading-row {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -597,6 +617,9 @@ header {
     -moz-align-items: center;
     align-items: center;
     padding-bottom: 32px; }
+    @media only screen and (max-width: 375px) {
+      .featured-news .heading-row, .upcoming-events .heading-row {
+        padding-bottom: 31px; } }
     .featured-news .heading-row h2, .featured-news .heading-row h3, .upcoming-events .heading-row h2, .upcoming-events .heading-row h3 {
       text-transform: uppercase;
       color: #6c798e; }
@@ -608,6 +631,12 @@ header {
       flex-grow: 1;
       font-size: 35px;
       font-weight: 300; }
+      @media only screen and (max-width: 375px) {
+        .featured-news .heading-row h2, .upcoming-events .heading-row h2 {
+          padding-top: 3px;
+          padding-left: 8px;
+          font-size: 23px;
+          word-spacing: 2px; } }
     .featured-news .heading-row h3, .upcoming-events .heading-row h3 {
       -webkit-box-flex: 0;
       -webkit-flex-grow: 0;
@@ -622,10 +651,18 @@ header {
       font-size: 16px;
       font-weight: 300;
       margin-left: 71.5em; }
+      @media only screen and (max-width: 375px) {
+        .featured-news .heading-row h3, .upcoming-events .heading-row h3 {
+          margin-left: 5em;
+          padding-top: 8px;
+          padding-left: 2px; } }
 
 /* End common parts */
 .featured-news {
   margin-top: 449px; }
+  @media only screen and (max-width: 375px) {
+    .featured-news {
+      margin-top: 421px; } }
   .featured-news .featured-news-content {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -634,6 +671,20 @@ header {
     display: inline-flex;
     color: #FFF;
     height: 351px; }
+    @media only screen and (max-width: 375px) {
+      .featured-news .featured-news-content {
+        height: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
     .featured-news .featured-news-content .spotlight {
       background-image: url(../img/girl-student.png);
       background-origin: content-box;
@@ -641,11 +692,23 @@ header {
       background-position-y: -12px;
       width: 373px;
       height: 351px; }
+      @media only screen and (max-width: 375px) {
+        .featured-news .featured-news-content .spotlight {
+          background-position-x: -280px;
+          background-position-y: -12px;
+          width: 326px;
+          height: 325px; } }
     .featured-news .featured-news-content .student-spotlight {
       width: 24.4%;
       background: #87888e;
       padding-top: 21px;
       padding-left: 25px; }
+      @media only screen and (max-width: 375px) {
+        .featured-news .featured-news-content .student-spotlight {
+          width: 93%;
+          padding-top: 19px;
+          padding-left: 29px;
+          padding-bottom: 17px; } }
       .featured-news .featured-news-content .student-spotlight h2, .featured-news .featured-news-content .student-spotlight h1 {
         text-transform: uppercase;
         font-weight: 100; }
@@ -653,41 +716,99 @@ header {
         font-family: Open Sans, sans-serif;
         letter-spacing: 1px;
         padding-bottom: 52px; }
+        @media only screen and (max-width: 375px) {
+          .featured-news .featured-news-content .student-spotlight h2 {
+            font-size: 19px;
+            font-weight: 500;
+            padding-bottom: 2px; } }
       .featured-news .featured-news-content .student-spotlight h1 {
         font-size: 36px;
         padding-bottom: 17px; }
+        @media only screen and (max-width: 375px) {
+          .featured-news .featured-news-content .student-spotlight h1 {
+            display: none; } }
       .featured-news .featured-news-content .student-spotlight p {
         font-size: 15.2px;
         font-weight: 200;
         line-height: 1.75;
         letter-spacing: 1px;
         padding-right: 20px; }
+        @media only screen and (max-width: 375px) {
+          .featured-news .featured-news-content .student-spotlight p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.6;
+            padding-right: 20px; } }
+    .featured-news .featured-news-content .transparent {
+      background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+      position: absolute;
+      z-index: -1;
+      float: left; }
     .featured-news .featured-news-content .find-your-voice {
       margin-left: 18px;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/find-your-path2.png);
-      background-repeat: no-repeat;
-      width: 364px; }
+      background-image: url(../img/find-your-path.png);
+      background-origin: content-box;
+      background-position-x: -179px;
+      background-position-y: -121px;
+      width: 364px;
+      height: 351px; }
+      @media only screen and (max-width: 375px) {
+        .featured-news .featured-news-content .find-your-voice {
+          margin-left: 0px;
+          margin-top: 38px;
+          width: 327px;
+          height: 326px;
+          /*  background-image: url(../img/find-your-path.png);
+        background-origin: content-box;
+        background-position-x: -180px;
+        background-position-y: -90px;*/ } }
       .featured-news .featured-news-content .find-your-voice h2 {
         font-weight: 500;
         padding-top: 279.5px;
         padding-left: 20px; }
+        @media only screen and (max-width: 375px) {
+          .featured-news .featured-news-content .find-your-voice h2 {
+            padding-top: 251.5px;
+            padding-left: 25px; } }
     .featured-news .featured-news-content .graduate-survey {
       margin-left: 20px;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/graduate-survey-cropped2.png);
-      background-repeat: no-repeat;
+      background-image: url(../img/graduate-survey.png);
+      background-origin: content-box;
+      background-position-x: -72px;
+      background-position-y: -47px;
       width: 363px; }
+      @media only screen and (max-width: 375px) {
+        .featured-news .featured-news-content .graduate-survey {
+          /*background-image: url(../img/graduate-survey.png);
+        background-origin: content-box;
+        background-position-x: -180px;
+        background-position-y: -75px;*/
+          margin-left: 0px;
+          margin-top: 20px;
+          width: 327px;
+          height: 324px; } }
       .featured-news .featured-news-content .graduate-survey h2 {
         font-weight: 500;
         padding-top: 279.5px;
         padding-left: 20px; }
         .featured-news .featured-news-content .graduate-survey h2 .year {
           font-family: Raleway, sans-serif; }
+        @media only screen and (max-width: 375px) {
+          .featured-news .featured-news-content .graduate-survey h2 {
+            padding-top: 250.5px;
+            padding-left: 25px; } }
 
 /*-------------------------------------------*/
 /* UPCOMING EVENTS SECTION */
 /*-------------------------------------------*/
 .upcoming-events {
   margin-top: 41px; }
+  @media only screen and (max-width: 375px) {
+    .upcoming-events {
+      margin-top: 39px; }
+      .upcoming-events .heading-row h3 {
+        margin-left: 3em;
+        padding-left: 8px; } }
   .upcoming-events .upcoming-events-content {
     width: 100%;
     padding-top: 32px;
@@ -706,6 +827,20 @@ header {
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 375px) {
+      .upcoming-events .upcoming-events-content {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column;
+        -moz-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        padding-top: 3px;
+        padding-left: 7px;
+        padding-bottom: 27px; } }
     .upcoming-events .upcoming-events-content .calendar-1, .upcoming-events .upcoming-events-content .calendar-2, .upcoming-events .upcoming-events-content .calendar-3 {
       width: 32.20339%;
       display: -webkit-inline-box;
@@ -716,11 +851,11 @@ header {
       -webkit-flex-flow: row;
       -moz-flex-flow: row;
       -ms-flex-flow: row;
-      flex-flow: row;
-      -webkit-flex-flow: wrap;
-      -moz-flex-flow: wrap;
-      -ms-flex-flow: wrap;
-      flex-flow: wrap; }
+      flex-flow: row; }
+      @media only screen and (max-width: 375px) {
+        .upcoming-events .upcoming-events-content .calendar-1, .upcoming-events .upcoming-events-content .calendar-2, .upcoming-events .upcoming-events-content .calendar-3 {
+          width: 95.25424%;
+          height: 84px; } }
       .upcoming-events .upcoming-events-content .calendar-1 .calendar-date, .upcoming-events .upcoming-events-content .calendar-2 .calendar-date, .upcoming-events .upcoming-events-content .calendar-3 .calendar-date {
         list-style: none;
         width: 90px;
@@ -741,30 +876,56 @@ header {
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center; }
+        @media only screen and (max-width: 375px) {
+          .upcoming-events .upcoming-events-content .calendar-1 .calendar-date, .upcoming-events .upcoming-events-content .calendar-2 .calendar-date, .upcoming-events .upcoming-events-content .calendar-3 .calendar-date {
+            width: 51px; } }
         .upcoming-events .upcoming-events-content .calendar-1 .calendar-date .month, .upcoming-events .upcoming-events-content .calendar-2 .calendar-date .month, .upcoming-events .upcoming-events-content .calendar-3 .calendar-date .month {
           background-color: #F23522;
           color: #FFF;
           font-size: 30px;
           font-weight: 600;
           line-height: 1.1; }
+          @media only screen and (max-width: 375px) {
+            .upcoming-events .upcoming-events-content .calendar-1 .calendar-date .month, .upcoming-events .upcoming-events-content .calendar-2 .calendar-date .month, .upcoming-events .upcoming-events-content .calendar-3 .calendar-date .month {
+              font-size: 16px;
+              padding-top: 1px;
+              padding-bottom: 1px; } }
         .upcoming-events .upcoming-events-content .calendar-1 .calendar-date .day, .upcoming-events .upcoming-events-content .calendar-2 .calendar-date .day, .upcoming-events .upcoming-events-content .calendar-3 .calendar-date .day {
           font-size: 50px;
           font-weight: 700;
           margin-top: -5px; }
+          @media only screen and (max-width: 375px) {
+            .upcoming-events .upcoming-events-content .calendar-1 .calendar-date .day, .upcoming-events .upcoming-events-content .calendar-2 .calendar-date .day, .upcoming-events .upcoming-events-content .calendar-3 .calendar-date .day {
+              margin-top: -3px;
+              font-size: 27px; } }
       .upcoming-events .upcoming-events-content .calendar-1 p, .upcoming-events .upcoming-events-content .calendar-2 p, .upcoming-events .upcoming-events-content .calendar-3 p {
         font-size: 22px;
         font-weight: 500;
         letter-spacing: 1px;
         word-spacing: 0px;
         padding-top: 14px; }
+        @media only screen and (max-width: 375px) {
+          .upcoming-events .upcoming-events-content .calendar-1 p, .upcoming-events .upcoming-events-content .calendar-2 p, .upcoming-events .upcoming-events-content .calendar-3 p {
+            font-size: 16px;
+            padding-top: 4px; } }
     .upcoming-events .upcoming-events-content .calendar-1 .month {
       padding-left: 20px; }
+      @media only screen and (max-width: 375px) {
+        .upcoming-events .upcoming-events-content .calendar-1 .month {
+          padding-left: 14px;
+          padding-right: 10px; } }
     .upcoming-events .upcoming-events-content .calendar-1 .day {
       padding-left: 17px; }
+      @media only screen and (max-width: 375px) {
+        .upcoming-events .upcoming-events-content .calendar-1 .day {
+          padding-left: 11px; } }
     .upcoming-events .upcoming-events-content .calendar-1 p {
       padding-left: 20px; }
     .upcoming-events .upcoming-events-content .calendar-2 {
       padding-left: 28px; }
+      @media only screen and (max-width: 375px) {
+        .upcoming-events .upcoming-events-content .calendar-2 {
+          padding-left: 0px; } }
       .upcoming-events .upcoming-events-content .calendar-2 .month {
         padding-left: 12px; }
       .upcoming-events .upcoming-events-content .calendar-2 .day {
@@ -773,6 +934,9 @@ header {
         padding-left: 18px; }
     .upcoming-events .upcoming-events-content .calendar-3 {
       padding-left: 57px; }
+      @media only screen and (max-width: 375px) {
+        .upcoming-events .upcoming-events-content .calendar-3 {
+          padding-left: 0px; } }
       .upcoming-events .upcoming-events-content .calendar-3 .month {
         padding-left: 12px; }
       .upcoming-events .upcoming-events-content .calendar-3 .day {
@@ -789,8 +953,22 @@ header {
   display: -moz-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex; }
+  @media only screen and (max-width: 375px) {
+    .get-connected .get-connected-content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column;
+      -moz-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column; } }
   .get-connected .get-connected-content .first-col, .get-connected .get-connected-content .second-col, .get-connected .get-connected-content .third-col, .get-connected .get-connected-content .fourth-col {
     width: 23.72881%; }
+    @media only screen and (max-width: 375px) {
+      .get-connected .get-connected-content .first-col, .get-connected .get-connected-content .second-col, .get-connected .get-connected-content .third-col, .get-connected .get-connected-content .fourth-col {
+        width: 100%; } }
   .get-connected .get-connected-content .first-col {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -809,6 +987,14 @@ header {
       word-spacing: 3px;
       padding-top: 40px;
       padding-left: 37px; }
+      @media only screen and (max-width: 375px) {
+        .get-connected .get-connected-content .first-col h1 {
+          font-size: 40px;
+          height: 275px;
+          line-height: 1.15;
+          word-spacing: 6px;
+          padding-top: 36px;
+          padding-left: 35px; } }
     .get-connected .get-connected-content .first-col .social {
       background-color: #F23522;
       height: 100px; }
@@ -822,12 +1008,22 @@ header {
       background-position-x: -53px;
       background-position-y: -0px;
       height: 397px; }
+      @media only screen and (max-width: 375px) {
+        .get-connected .get-connected-content .first-col .stairs {
+          height: 374px; } }
       .get-connected .get-connected-content .first-col .stairs .social-instagram p {
         padding-top: 353px;
         padding-left: 48px;
         color: #FFF;
         font-size: 15px;
         font-weight: 400; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .first-col .stairs .social-instagram p {
+            padding-top: 322px;
+            padding-left: 44px;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: 400; } }
         .get-connected .get-connected-content .first-col .stairs .social-instagram p span {
           padding-left: 80px; }
   .get-connected .get-connected-content .second-col {
@@ -844,17 +1040,30 @@ header {
       background-position-x: -34px;
       background-position-y: -0px;
       height: 400px; }
+      @media only screen and (max-width: 375px) {
+        .get-connected .get-connected-content .second-col .back-to-school {
+          height: 376px; } }
       .get-connected .get-connected-content .second-col .back-to-school .social-instagram p {
         padding-top: 353px;
         padding-left: 48px;
         color: #FFF;
         font-size: 15px;
         font-weight: 400; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .second-col .back-to-school .social-instagram p {
+            padding-top: 322px;
+            padding-left: 44px;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: 400; } }
         .get-connected .get-connected-content .second-col .back-to-school .social-instagram p span {
           padding-left: 80px; }
     .get-connected .get-connected-content .second-col .advice {
       background-color: #F0F0F2;
       height: 397px; }
+      @media only screen and (max-width: 375px) {
+        .get-connected .get-connected-content .second-col .advice {
+          height: 376px; } }
       .get-connected .get-connected-content .second-col .advice .message span, .get-connected .get-connected-content .second-col .advice .social-twitter span {
         color: #F23522; }
       .get-connected .get-connected-content .second-col .advice .message p {
@@ -864,12 +1073,21 @@ header {
         padding-left: 36px;
         padding-right: 40px;
         color: #87888e; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .second-col .advice .message p {
+            padding-top: 136px; } }
       .get-connected .get-connected-content .second-col .advice .social-twitter p {
         padding-top: 134px;
         padding-left: 33px;
         font-size: 14px; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .second-col .advice .social-twitter p {
+            padding-top: 116px; } }
         .get-connected .get-connected-content .second-col .advice .social-twitter p span {
           padding-left: 99px; }
+          @media only screen and (max-width: 375px) {
+            .get-connected .get-connected-content .second-col .advice .social-twitter p span {
+              padding-left: 89px; } }
   .get-connected .get-connected-content .third-col {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -890,17 +1108,34 @@ header {
         padding-left: 36px;
         padding-right: 40px;
         color: #87888e; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .third-col .advice .message p {
+            padding-top: 136px; } }
       .get-connected .get-connected-content .third-col .advice .social-twitter p {
         padding-top: 134px;
         padding-left: 33px;
         font-size: 14px; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .third-col .advice .social-twitter p {
+            padding-top: 116px; } }
         .get-connected .get-connected-content .third-col .advice .social-twitter p span {
           padding-left: 99px; }
+          @media only screen and (max-width: 375px) {
+            .get-connected .get-connected-content .third-col .advice .social-twitter p span {
+              padding-left: 89px; } }
+      @media only screen and (max-width: 375px) {
+        .get-connected .get-connected-content .third-col .advice {
+          height: 374px; } }
       .get-connected .get-connected-content .third-col .advice .message p {
-        /*Ningun cambio*/
         padding-top: 165px; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .third-col .advice .message p {
+            padding-top: 137px; } }
       .get-connected .get-connected-content .third-col .advice .social-twitter p {
         padding-top: 127px; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .third-col .advice .social-twitter p {
+            padding-top: 114px; } }
     .get-connected .get-connected-content .third-col .racc-entrance {
       background-color: #272A3D;
       background-image: url(../img/img2.png);
@@ -909,12 +1144,22 @@ header {
       background-position-x: -4px;
       background-position-y: -20px;
       height: 398px; }
+      @media only screen and (max-width: 375px) {
+        .get-connected .get-connected-content .third-col .racc-entrance {
+          height: 375px; } }
       .get-connected .get-connected-content .third-col .racc-entrance .social-instagram p {
         padding-top: 353px;
         padding-left: 48px;
         color: #FFF;
         font-size: 15px;
         font-weight: 400; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .third-col .racc-entrance .social-instagram p {
+            padding-top: 322px;
+            padding-left: 44px;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: 400; } }
         .get-connected .get-connected-content .third-col .racc-entrance .social-instagram p span {
           padding-left: 80px; }
   .get-connected .get-connected-content .fourth-col {
@@ -931,18 +1176,31 @@ header {
       background-position-x: 0px;
       background-position-y: 0px;
       height: 399px; }
+      @media only screen and (max-width: 375px) {
+        .get-connected .get-connected-content .fourth-col .racc-product {
+          height: 374px; } }
       .get-connected .get-connected-content .fourth-col .racc-product .social-instagram p {
         padding-top: 353px;
         padding-left: 48px;
         color: #FFF;
         font-size: 15px;
         font-weight: 400; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .fourth-col .racc-product .social-instagram p {
+            padding-top: 322px;
+            padding-left: 44px;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: 400; } }
         .get-connected .get-connected-content .fourth-col .racc-product .social-instagram p span {
           padding-left: 80px; }
     .get-connected .get-connected-content .fourth-col .advice {
+      height: 398px;
       background-color: #F0F0F2;
-      height: 397px;
-      height: 398px; }
+      height: 397px; }
+      @media only screen and (max-width: 375px) {
+        .get-connected .get-connected-content .fourth-col .advice {
+          height: 375px; } }
       .get-connected .get-connected-content .fourth-col .advice .message span, .get-connected .get-connected-content .fourth-col .advice .social-twitter span {
         color: #F23522; }
       .get-connected .get-connected-content .fourth-col .advice .message p {
@@ -952,12 +1210,21 @@ header {
         padding-left: 36px;
         padding-right: 40px;
         color: #87888e; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .fourth-col .advice .message p {
+            padding-top: 136px; } }
       .get-connected .get-connected-content .fourth-col .advice .social-twitter p {
         padding-top: 134px;
         padding-left: 33px;
         font-size: 14px; }
+        @media only screen and (max-width: 375px) {
+          .get-connected .get-connected-content .fourth-col .advice .social-twitter p {
+            padding-top: 116px; } }
         .get-connected .get-connected-content .fourth-col .advice .social-twitter p span {
           padding-left: 99px; }
+          @media only screen and (max-width: 375px) {
+            .get-connected .get-connected-content .fourth-col .advice .social-twitter p span {
+              padding-left: 89px; } }
 
 /*-------------------------------------------*/
 /* NEED MORE INFO SECTION */
@@ -966,11 +1233,19 @@ header {
   position: relative;
   height: 258px;
   padding-left: 209px; }
+  @media only screen and (max-width: 375px) {
+    .need-more-info {
+      height: 189px;
+      padding-left: 0px; } }
   .need-more-info .info-content {
     position: absolute;
     background-color: #87888e;
     width: 86.91525%;
     height: 258px; }
+    @media only screen and (max-width: 375px) {
+      .need-more-info .info-content {
+        width: 100%;
+        height: 189px; } }
     .need-more-info .info-content .info-header h2 {
       text-transform: uppercase;
       color: #FFF;
@@ -981,6 +1256,14 @@ header {
       padding-bottom: 30px;
       letter-spacing: 1px;
       word-spacing: -2px; }
+      @media only screen and (max-width: 375px) {
+        .need-more-info .info-content .info-header h2 {
+          font-size: 24px;
+          padding-top: 28px;
+          padding-left: 28px;
+          padding-bottom: 5px;
+          letter-spacing: 0px;
+          word-spacing: -2px; } }
     .need-more-info .info-content .info-form {
       padding-left: 45px;
       display: -webkit-inline-box;
@@ -991,11 +1274,10 @@ header {
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      /*input[type=text] {
-        @include placeholder {
-        }
-      }*/ }
+      flex-wrap: wrap; }
+      @media only screen and (max-width: 375px) {
+        .need-more-info .info-content .info-form {
+          padding-left: 31px; } }
       .need-more-info .info-content .info-form input {
         line-height: 5.5;
         font-family: Raleway, sans-serif;
@@ -1004,9 +1286,21 @@ header {
         border-radius: 3px;
         margin-right: 7px;
         padding-left: 25px; }
+        @media only screen and (max-width: 375px) {
+          .need-more-info .info-content .info-form input {
+            line-height: 2.5;
+            margin-right: 7px;
+            margin-top: 10px;
+            padding-left: 9px;
+            border-radius: 0px;
+            width: 153px; } }
       .need-more-info .info-content .info-form .contact-send {
-        margin: -11px;
+        margin-top: 8px;
+        margin-left: -15px;
         padding-left: 15px; }
+        @media only screen and (max-width: 375px) {
+          .need-more-info .info-content .info-form .contact-send {
+            margin-top: 9px; } }
         .need-more-info .info-content .info-form .contact-send a {
           text-decoration: none;
           font-family: Raleway, sans-serif;
@@ -1015,16 +1309,32 @@ header {
           border: 1px solid #FFF;
           border-radius: 2px;
           padding: 20px 49px; }
+          @media only screen and (max-width: 375px) {
+            .need-more-info .info-content .info-form .contact-send a {
+              line-height: 2;
+              border: 3px solid #FFF;
+              padding: 2px 47px; } }
       .need-more-info .info-content .info-form .contact-help p {
         color: #FFF;
         font-family: Raleway, sans-serif;
         font-size: 30px;
         padding-top: 10px;
         padding-left: 46px; }
+        @media only screen and (max-width: 375px) {
+          .need-more-info .info-content .info-form .contact-help p {
+            font-size: 18px;
+            margin-left: -4px;
+            padding-top: 9px;
+            padding-left: 0px; } }
         .need-more-info .info-content .info-form .contact-help p span {
           margin-left: 16px;
           font-weight: 600;
           font-size: 35px; }
+          @media only screen and (max-width: 375px) {
+            .need-more-info .info-content .info-form .contact-help p span {
+              margin-left: 0px;
+              font-weight: 600;
+              font-size: 21px; } }
   .need-more-info::after {
     content: ".";
     clear: both;
@@ -1039,6 +1349,9 @@ header {
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position-y: -253px; }
+  @media only screen and (max-width: 375px) {
+    .about-racc-college {
+      background-image: none; } }
   .about-racc-college .about-racc-content {
     padding-top: 460px;
     width: 86.91525%;
@@ -1047,6 +1360,19 @@ header {
     display: -moz-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex; }
+    @media only screen and (max-width: 375px) {
+      .about-racc-college .about-racc-content {
+        padding-top: 0px;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column-reverse;
+        -moz-flex-flow: column-reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse; } }
     .about-racc-college .about-racc-content .racc-info {
       width: 139%;
       background-color: #F23522;
@@ -1054,17 +1380,34 @@ header {
       padding-top: 116px;
       padding-left: 40px;
       padding-right: 58px; }
+      @media only screen and (max-width: 375px) {
+        .about-racc-college .about-racc-content .racc-info {
+          width: 100%;
+          padding-top: 28px;
+          padding-left: 27px;
+          padding-right: 19px;
+          padding-bottom: 45px; } }
       .about-racc-college .about-racc-content .racc-info h2 {
         font-family: Raleway, sans-serif;
         font-weight: 100;
         text-transform: uppercase;
         font-size: 35px;
         padding-bottom: 25px; }
+        @media only screen and (max-width: 375px) {
+          .about-racc-college .about-racc-content .racc-info h2 {
+            font-size: 24px;
+            padding-bottom: 18px; } }
       .about-racc-college .about-racc-content .racc-info p {
         font-size: 17.7px;
         font-weight: 400;
         padding-left: 4px;
         line-height: 1.7; }
+        @media only screen and (max-width: 375px) {
+          .about-racc-college .about-racc-content .racc-info p {
+            font-size: 13px;
+            padding-left: 0px;
+            line-height: 1.5;
+            letter-spacing: 0.8px; } }
     .about-racc-college .about-racc-content .racc-video .top-section {
       height: 531px;
       background-image: url(../img/img5.png);
@@ -1072,13 +1415,33 @@ header {
       background-origin: content-box;
       background-position-x: -20px;
       background-position-y: 3px; }
+      @media only screen and (max-width: 375px) {
+        .about-racc-college .about-racc-content .racc-video .top-section {
+          height: 233px;
+          width: 98.64407%;
+          padding-left: 25px;
+          padding-right: 10px;
+          padding-top: 2px; } }
       .about-racc-college .about-racc-content .racc-video .top-section img {
         padding: 208px 400px; }
+        @media only screen and (max-width: 375px) {
+          .about-racc-college .about-racc-content .racc-video .top-section img {
+            width: 87px;
+            height: 87px;
+            padding: 0px 0px;
+            margin-top: 82px;
+            margin-left: 123px; } }
     .about-racc-college .about-racc-content .racc-video .bottom-section {
       padding-top: 50px;
       padding-bottom: 45px;
       padding-left: 50px;
       padding-right: 44px; }
+      @media only screen and (max-width: 375px) {
+        .about-racc-college .about-racc-content .racc-video .bottom-section {
+          padding-top: 23px;
+          padding-bottom: 45px;
+          padding-left: 26px;
+          padding-right: 44px; } }
       .about-racc-college .about-racc-content .racc-video .bottom-section h2 {
         color: #999ba1;
         font-weight: 100;
@@ -1086,11 +1449,19 @@ header {
         text-transform: uppercase;
         padding-bottom: 14px;
         word-spacing: 1px; }
+        @media only screen and (max-width: 375px) {
+          .about-racc-college .about-racc-content .racc-video .bottom-section h2 {
+            font-size: 24px; } }
       .about-racc-college .about-racc-content .racc-video .bottom-section p {
         font-size: 17px;
         font-weight: 400;
         line-height: 1.8;
         padding-left: 5px; }
+        @media only screen and (max-width: 375px) {
+          .about-racc-college .about-racc-content .racc-video .bottom-section p {
+            font-size: 14px;
+            line-height: 1.7;
+            padding-left: 2px; } }
 
 /*-------------------------------------------*/
 /* SPONSORS SECTION */
@@ -1114,20 +1485,51 @@ header {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
+  @media only screen and (max-width: 375px) {
+    .sponsors {
+      height: 652px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column;
+      -moz-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column; } }
   .sponsors .miller-center {
     width: 32.20339%;
     padding-right: 102px;
     padding-bottom: 3px; }
+    @media only screen and (max-width: 375px) {
+      .sponsors .miller-center {
+        width: 83.05085%;
+        padding-top: 55px;
+        padding-right: 114px;
+        padding-bottom: 10px; } }
     .sponsors .miller-center img {
       position: relative;
       float: right; }
+      @media only screen and (max-width: 375px) {
+        .sponsors .miller-center img {
+          width: 83px;
+          height: auto; } }
   .sponsors .schmidt-training {
+    width: 32.20339%;
     padding-left: 59px;
-    padding-bottom: 12px;
-    width: 32.20339%; }
+    padding-bottom: 12px; }
+    @media only screen and (max-width: 375px) {
+      .sponsors .schmidt-training {
+        width: 83.05085%;
+        padding-left: 0px;
+        padding-top: 49px; } }
     .sponsors .schmidt-training img {
       padding-bottom: 9px;
       padding-left: 190px; }
+      @media only screen and (max-width: 375px) {
+        .sponsors .schmidt-training img {
+          padding-bottom: 11px;
+          padding-left: 120px; } }
     .sponsors .schmidt-training p {
       font-size: 19px;
       text-align: center;
@@ -1138,14 +1540,29 @@ header {
     width: 32.20339%;
     padding-right: 116px;
     padding-bottom: 13px; }
+    @media only screen and (max-width: 375px) {
+      .sponsors .give-to-racc {
+        width: 83.05085%;
+        padding-right: 0px;
+        padding-top: 46px;
+        padding-bottom: 13px; } }
     .sponsors .give-to-racc img {
       padding-bottom: 9px;
       padding-left: 170px; }
+      @media only screen and (max-width: 375px) {
+        .sponsors .give-to-racc img {
+          height: 78px;
+          width: auto;
+          padding-left: 127px;
+          padding-bottom: 0px; } }
     .sponsors .give-to-racc p {
       font-size: 19px;
       text-align: center;
       letter-spacing: 1.5px;
       word-spacing: 2px; }
+      @media only screen and (max-width: 375px) {
+        .sponsors .give-to-racc p {
+          padding-top: 10px; } }
       .sponsors .give-to-racc p span {
         font-weight: 600; }
 
@@ -1159,15 +1576,54 @@ footer .footer-content {
   width: 100%;
   height: 500px;
   padding-top: 81px;
-  /* MOBILE */
-  /* END MOBILE */
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -moz-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex; }
+  @media only screen and (max-width: 375px) {
+    footer .footer-content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column;
+      -moz-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      height: 803px;
+      padding-top: 71px; } }
   footer .footer-content .footer-menu-mobile {
     display: none; }
+    @media only screen and (max-width: 375px) {
+      footer .footer-content .footer-menu-mobile {
+        display: block;
+        width: 100%;
+        padding-top: 2px;
+        -webkit-align-content: center;
+        -moz-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center; }
+        footer .footer-content .footer-menu-mobile li {
+          list-style: none;
+          font-size: 15px;
+          padding-left: 29px;
+          margin-bottom: 36px; }
+          footer .footer-content .footer-menu-mobile li a {
+            background-color: #000;
+            color: #FFF;
+            font-family: Raleway, sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding: 10px 101px; }
+          footer .footer-content .footer-menu-mobile li:first-child a {
+            padding: 10px 126px; }
+          footer .footer-content .footer-menu-mobile li:last-child a {
+            padding: 10px 116px; } }
   footer .footer-content .sitemap {
     width: 57.62712%;
     margin-left: 13%;
@@ -1183,6 +1639,12 @@ footer .footer-content {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+    @media only screen and (max-width: 375px) {
+      footer .footer-content .sitemap {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 98%; } }
     footer .footer-content .sitemap .hiperlinks {
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -1192,6 +1654,9 @@ footer .footer-content {
       font-size: 10px;
       font-weight: 400;
       letter-spacing: 1px; }
+      @media only screen and (max-width: 375px) {
+        footer .footer-content .sitemap .hiperlinks {
+          display: none; } }
       footer .footer-content .sitemap .hiperlinks .popular-links h3, footer .footer-content .sitemap .hiperlinks .contact-information h3, footer .footer-content .sitemap .hiperlinks .policies h3, footer .footer-content .sitemap .hiperlinks .login-center h3 {
         color: #F23522;
         padding-bottom: 22px; }
@@ -1220,9 +1685,16 @@ footer .footer-content {
       height: 1px;
       border: 0;
       background-color: #FFF; }
+      @media only screen and (max-width: 375px) {
+        footer .footer-content .sitemap hr {
+          display: none; } }
     footer .footer-content .sitemap .social-media {
       padding-left: 190px;
       padding-top: 42px; }
+      @media only screen and (max-width: 375px) {
+        footer .footer-content .sitemap .social-media {
+          padding-left: 0px;
+          padding-top: 0px; } }
       footer .footer-content .sitemap .social-media ul {
         display: -webkit-inline-box;
         display: -webkit-inline-flex;
@@ -1244,17 +1716,41 @@ footer .footer-content {
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center; }
+        @media only screen and (max-width: 375px) {
+          footer .footer-content .sitemap .social-media ul {
+            margin-left: 90px;
+            margin-right: 20px; } }
         footer .footer-content .sitemap .social-media ul li {
           list-style: none;
           margin-right: 44px; }
+          @media only screen and (max-width: 375px) {
+            footer .footer-content .sitemap .social-media ul li {
+              width: 43px;
+              margin-bottom: 54px; } }
   footer .footer-content .copyright {
     width: 40.67797%; }
+    @media only screen and (max-width: 375px) {
+      footer .footer-content .copyright {
+        width: 100%;
+        margin-top: -560px; } }
     footer .footer-content .copyright .racc-white {
       padding-left: 52px;
       padding-bottom: 45px; }
+      @media only screen and (max-width: 375px) {
+        footer .footer-content .copyright .racc-white {
+          padding-left: 110px;
+          padding-top: 21px;
+          padding-bottom: 25px; } }
       footer .footer-content .copyright .racc-white img {
         width: 280px;
-        height: 140px; }
+        height: 177px; }
+        @media only screen and (max-width: 375px) {
+          footer .footer-content .copyright .racc-white img {
+            width: 158px;
+            height: 76px; } }
+    @media only screen and (max-width: 375px) {
+      footer .footer-content .copyright .disclaimer {
+        display: none; } }
     footer .footer-content .copyright .disclaimer p {
       font-family: Raleway, sans-serif;
       font-size: 11px;
@@ -1264,3 +1760,15 @@ footer .footer-content {
       letter-spacing: 0.5px; }
     footer .footer-content .copyright .disclaimer-mobile {
       display: none; }
+      @media only screen and (max-width: 375px) {
+        footer .footer-content .copyright .disclaimer-mobile {
+          display: block; }
+          footer .footer-content .copyright .disclaimer-mobile p {
+            font-family: Raleway, sans-serif;
+            font-size: 16.5px;
+            line-height: 1.4;
+            padding-left: 79px;
+            padding-right: 79px;
+            padding-bottom: 22px;
+            letter-spacing: 0.5px;
+            text-align: center; } }
