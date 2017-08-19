@@ -50,7 +50,7 @@
 }
 .flexslider .slides img {
   width: 1600px;
-  height: 1238px;
+  /*height: 1238px;*/
   display: block;
 }
 .flexslider .slides:after {
@@ -89,11 +89,14 @@ html[xmlns] .flexslider .slides {
   z-index: -1;
 }
 .flexslider .slides {
+  height:1238px;
+  overflow: hidden;
   zoom: 1;
 }
 .flexslider .slides img {
-  height: 1238px;
+  /*height: 1238px;*/
   -moz-user-select: none;
+  overflow: hidden;
 }
 .flex-viewport {
   max-height: 2000px;

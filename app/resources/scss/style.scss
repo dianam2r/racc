@@ -126,6 +126,10 @@ p {
 
 header {
   .flexslider .slides img {
+    background-color: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
+    background-position-x: -6px;
+    background-position-y: -48px;
+    filter: brightness(0.5) opacity(0.95) ;
     @include phone {
       width: $max-width-mobile;
       height: 700px;
@@ -133,22 +137,15 @@ header {
   }
   .slides {
     margin-top: -1px;
-    background-color: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
-    .slide1 {
-      .gradiente {
-        background-color: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
-        height: 1238px;
-        position: relative;
-      }
-    }
-    img {
+  }
+/*    img {
      &::after {
        content: ".";
        visibility: hidden;
        clear: both;
      }
-   }
-  }
+   }*/
+
   /*background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)), url('../img/slide.png');
   background-position-x: -6px;
   background-position-y: -48px;
@@ -278,8 +275,8 @@ header {
       letter-spacing: 2px;
       i {
         position: relative;
-        padding-left: 10px;
-        font-size: 15px;
+        padding-left: 39px;
+        font-size: 27px;
         font-weight: 300;
       }
     }
@@ -289,11 +286,19 @@ header {
       .first-nav {
         @include nav-bar($color-white, $color-red, $color-dark-red, $alto:46px, $tam-fuente:12px, $peso:100);
         li {
-          padding-left: 30px;
-          padding-right: 50px;
-
+          padding-left: 45px;
+          padding-right: 22px;
+          .search-text{
+            vertical-align: super;
+          }
+          a {
+            word-spacing: 2px;
+          }
           &:hover {
             line-height: 3.1;
+            &:last-child{
+              line-height: 1.7;
+            }
             a {
               font-weight: 400;
             }
@@ -304,7 +309,7 @@ header {
       .second-nav {
         @include nav-bar($color-black, inherit,$color-white,$alto:60px,$tam-fuente:15px,$peso:600);
         li {
-          padding-left: 20px;
+          padding-left: 18px;
           padding-right: 34.5px;
           float: right;
           &:last-child {
@@ -315,7 +320,7 @@ header {
           }
           &:hover {
             line-height: 4;
-            font-weight: 700;
+            font-weight: 600;
           }
           a {
             font-weight: 600;
@@ -353,14 +358,24 @@ header {
 
   .slide-text {
     color: $color-white;
-    position: absolute;
-    top: 67.1%;
-    left: 2.7%;
+    /*position: absolute;
+    top: 68.5%;
+    left: 1.48%;*/
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(18px,-751px);
+    -webkit-transform: translate(18px,-751px);
+    -ms-transform: translate(18px,-751px);
     @include inline-flex;
     @include flex-flow(row);
     @include phone {
-      top: 21.6%;
+      //position: absolute;
+      top: 0%;
       left: 0%;
+      transform: translate(-2px,-1045px);
+      -webkit-transform: translate(-2px,-1045px);
+      -ms-transform: translate(-2px,-1045px);
     }
     .previous {
       padding-top: 84px;
@@ -383,7 +398,7 @@ header {
         font-weight: 100;
         text-transform: uppercase;
         letter-spacing: 1px;
-        word-spacing: 1px;
+        word-spacing: -2.5px;
         line-height: 1.1;
         padding-bottom: 28px;
         @include phone {
@@ -445,15 +460,24 @@ header {
 
 .side-block {
   @include inline-flex;
-  position: absolute;
+  //position: absolute;
+  position: relative;
   z-index: 2;
-  margin-top: -30.7%;
-  padding-left: 33.6%;
+  //margin-top: -30.7%;
+  //padding-left: 33.6%;
+  margin-top: -6.7%;
+  padding-left: 26.6%;
+  transform: translate(0px,-461px);
+  -ms-transform: translate(0px,-461px);
+  -webkit-transform: translate(0px,-461px);
   @include phone {
     @include flexbox;
     @include flex-flow(column);
     margin-top: 0%;
     padding-left: 0%;
+    transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    -webkit-transform: translate(0px,0px);
   }
   .left-side, .right-side {
     text-transform: uppercase;
@@ -502,7 +526,7 @@ header {
             &:first-child {
               border-top: 1px solid $color-black;
               h2 {
-                padding-top: 29px;
+                padding-top: 27px;
               }
             }
           }
@@ -548,12 +572,13 @@ header {
           padding-right: 10px;
           @include phone {
             padding-top: 14px;
-            padding-left: 82px;
-            padding-right: 427px;
+            padding-left: 33px;
+            padding-right: 49px;
+            text-align: center;
           }
           i {
             @include phone {
-              padding-left: 143px;
+              padding-left: 100px;
               margin-top: -15px;
             }
           }
@@ -584,13 +609,13 @@ header {
       visibility: hidden;
     }
     .up {
-      height: 388px;
-      width: 811px;
       background-image: url(../img/comunity.png);
       background-repeat: no-repeat;
       background-origin: content-box;
       background-position-x: -5px;
       background-position-y: -48px;
+      height: 388px;
+      width: 811px;
     }
     .down {
       @include inline-flex;
@@ -708,13 +733,14 @@ header {
 /* End common parts */
 
 .featured-news {
-  margin-top: 449px;
+  //margin-top: 449px;
+  margin-top: -400px;
   @include phone {
-    margin-top: 421px;
+    //margin-top: 421px;
+    margin-top: -660px;
   }
   .featured-news-content{
     @include inline-flex;
-    //@include align-items(stretch);
     color: $color-white;
     height: 351px;
     @include phone {
@@ -723,12 +749,12 @@ header {
       @include flex-direction(column);
     }
     .spotlight {
-      //width: susy-span(3 of 12);
+      //width: susy-span(3);
       background-image: url(../img/girl-student.png);
       background-origin: content-box;
       background-position-x: -280px;
       background-position-y: -12px;
-      width: 373px;
+      width: 371px;
       height: 351px;
       @include phone {
         background-position-x: -280px;
@@ -738,11 +764,10 @@ header {
       }
     }
     .student-spotlight {
-    //  @include align-items(stretch);
       width: 24.4%;
       background: #87888e;
       padding-top: 21px;
-      padding-left: 25px;
+      padding-left: 28px;
       @include phone {
         width: 93%;
         padding-top: 19px;
@@ -775,7 +800,6 @@ header {
         font-weight: 200;
         line-height: 1.75;
         letter-spacing: 1px;
-        //word-spacing: 1px;
         padding-right: 20px;
         @include phone {
           font-size: 12px;
@@ -785,25 +809,14 @@ header {
         }
       }
     }
-    .transparent {
-      background-color: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
-      position: absolute;
-      z-index: -1;
-      //filter: alpha(opacity=60);
-      float: left;
-      //-moz-opacity:.60;
-      //opacity:.60;
-      //fix this !!!!
-    }
     .find-your-voice {
-      margin-left: 18px;
-      //width: susy-span(3 of 12);
-      //background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)), url(../img/find-your-path2.png);
-      //background-repeat: no-repeat;
+      margin-left: 19px;
+      //width: susy-span(3);
       background-image: url(../img/find-your-path.png);
       background-origin: content-box;
       background-position-x: -179px;
       background-position-y: -121px;
+      filter:brightness(0.9);
       width: 364px;
       height: 351px;
       @include phone {
@@ -811,11 +824,6 @@ header {
         margin-top: 38px;
         width: 327px;
         height: 326px;
-        //background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)), url(../img/find-your-path.png);
-      /*  background-image: url(../img/find-your-path.png);
-        background-origin: content-box;
-        background-position-x: -180px;
-        background-position-y: -90px;*/
       }
       h2 {
         font-weight: 500;
@@ -828,20 +836,15 @@ header {
       }
     }
     .graduate-survey {
-      //width: susy-span(3 of 12);
-      margin-left: 20px;
-      //background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)), url(../img/graduate-survey-cropped2.png);
-      //background-repeat: no-repeat;
+      //width: susy-span(3);
       background-image: url(../img/graduate-survey.png);
       background-origin: content-box;
       background-position-x: -72px;
       background-position-y: -47px;
+      filter: brightness(0.9);
       width: 363px;
+      margin-left: 21px;
       @include phone {
-        /*background-image: url(../img/graduate-survey.png);
-        background-origin: content-box;
-        background-position-x: -180px;
-        background-position-y: -75px;*/
         margin-left: 0px;
         margin-top: 20px;
         width: 327px;
@@ -871,13 +874,20 @@ header {
   margin-top: 41px;
   @include phone {
     margin-top: 39px;
-    .heading-row {
-      h3 {
+  }
+  .heading-row {
+    h3{
+      margin-left: 68.5em;
+      padding-top: 19px;
+      padding-left: 7px;
+      @include phone {
         margin-left: 3em;
+        padding-top: 7px;
         padding-left: 8px;
       }
     }
   }
+
   .upcoming-events-content {
     width: susy-span(12);
     padding-top: 32px;
@@ -897,7 +907,6 @@ header {
       width: susy-span(4);
       @include inline-flex;
       @include flex-flow(row);
-      //@include flex-flow(wrap);
       @include phone {
         width: susy-span(11.3);
         height: 84px;
@@ -919,7 +928,6 @@ header {
           font-size: 30px;
           font-weight: 600;
           line-height: 1.1;
-          //padding-left: 20px;
           @include phone {
             font-size: 16px;
             padding-top: 1px;
@@ -930,7 +938,6 @@ header {
           font-size: 50px;
           font-weight: 700;
           margin-top: -5px;
-          //padding-left: 17px;
           @include phone {
             margin-top: -3px;
             font-size: 27px;
@@ -943,7 +950,6 @@ header {
         letter-spacing: 1px;
         word-spacing: 0px;
         padding-top: 14px;
-        //padding-left: 20px;
         @include phone {
           font-size: 16px;
           padding-top: 4px;
@@ -1227,7 +1233,7 @@ header {
       }
     }
     .info-form {
-      padding-left: 45px;
+      padding-left: 46px;
       @include inline-flex;
       @include flex-wrap(wrap);
       @include phone {
@@ -1240,7 +1246,7 @@ header {
         border: 0px;
         border-radius: 3px;
         margin-right: 7px;
-        padding-left: 25px;
+        padding-left: 23px;
         @include phone {
           line-height: 2.5;
           margin-right: 7px;
@@ -1251,13 +1257,12 @@ header {
         }
       }
       .contact-send {
-        margin-top: 8px;
-        margin-left: -15px;
+        margin-top: -11px;
+        margin-left: -14px;
         padding-left: 15px;
         @include phone {
           margin-top: 9px;
-          //margin-left: -15px;
-          //padding-left: 15px;
+          margin-left: -15px;
         }
         a {
           text-decoration: none;
@@ -1280,7 +1285,7 @@ header {
           font-family: $title-font;
           font-size: 30px;
           padding-top: 10px;
-          padding-left: 46px;
+          padding-left: 37px;
           @include phone {
             font-size: 18px;
             margin-left: -4px;
@@ -1314,19 +1319,28 @@ header {
 /*-------------------------------------------*/
 
 .about-racc-college {
+  height: 1320px;
+  .about-racc-college-background{
   background-image: url(../img/racc-college.png);
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position-y: -253px;
+  height: 742px;
   @include phone {
     background-image: none;
+    display: none;
+  }
   }
   .about-racc-content {
-    padding-top: 460px;
+    padding-top: 0px;
+    margin-top: -136px;
+    transform: translate(0px, -147px);
+    -webkit-transform: translate(0px, -147px);
+    -ms-transform: translate(0px, -147px);
     width: susy-span(10.32);
     @include inline-flex;
     @include phone {
-      padding-top: 0px;
+      padding-top: 282px;
       width: susy-span(12);
       @include flexbox;
       @include flex-flow(column-reverse);
@@ -1685,7 +1699,7 @@ footer {
         }
         img {
           width: 280px;
-          height: 177px;
+          height: 139px;
           @include phone {
             width: 158px;
             height: 76px;
